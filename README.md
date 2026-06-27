@@ -5,6 +5,8 @@ remain widely popular there under the "Name Land" brand name.
 At least some of them feature the ability to connect to a PC for printing labels.
 <img width="1626" height="914" alt="image" src="https://github.com/user-attachments/assets/6c893376-5fa9-4f41-bc43-d106ab670969" />
 
+## Specialized cables and applications
+
 This system utilizes a serial transfer method via a proprietary interface cable 
 widely used across Casio products, that is hardware-compatible with the "[DIGITAL]" 
 interface found on devices such as the QV series digital cameras.
@@ -36,4 +38,24 @@ commonly available for applications like Arduino programming?offer a solution;
 these +5V-system serial cables can function as PC connection cables simply by attaching
 a 2.5mm TRS plug.
 <img width="1626" height="914" alt="image" src="https://github.com/user-attachments/assets/d379b376-19aa-4395-8474-2afd778c6e2e" />
+
+## Connect to a modern PCs
+
+Casio has not officially released the communication protocols for these label printers; 
+consequently, there is no standard way to connect these older models to modern PCs. 
+However, since it is relatively easy to construct a suitable connection cable, writing 
+your own software is a great way to put this legacy hardware to use.
+
+### Printing QR Codes
+
+The code presented here was developed by simulating the communication observed between 
+the label printer and CASIO's software installed on a WindowsXP PC.
+I designed it to print arbitrary text strings as QR codes to make it practically useful.
+
+To run this on your system, you will need serial library on your Python, and need to 
+install `numpy`, `qrcode` and `FreeSimpleGUI` libraries too. 
+Additionally, if your label printer is not the KL-A45 model, some modifications to the 
+code may be required.
+
+<img width="914" height="914" alt="image" src="https://github.com/user-attachments/assets/afb457a1-8412-4565-9318-343cd75ec29b" />
 
